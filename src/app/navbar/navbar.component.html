@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="logo" href="#">MyApp</a>
+
+    <!-- Menu Toggle Button (Mobile) -->
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+
+    <!-- Navbar Links -->
+    <ul [class.active]="isMenuOpen">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,71 @@
+/* Navbar Styling */
+.navbar {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  ul li {
+    padding: 10px;
+    text-align: center;
+  }
+}

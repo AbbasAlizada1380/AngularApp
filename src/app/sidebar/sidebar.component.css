@@ -1,0 +1,21 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+i {
+  margin-right: 10px;
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router'; // Import RouterModule
-
+import { Appointment } from '../model/apointment';
+import { title } from 'process';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
@@ -9,11 +10,9 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
-  menuItems = [
-    { label: 'Dashboard', icon: 'dashboard', link: '/dashboard' },
-    { label: 'Orders', icon: 'shopping_cart', link: '/orders' },
-    { label: 'Customers', icon: 'people', link: '/customers' },
-    { label: 'Reports', icon: 'bar_chart', link: '/reports' },
-    { label: 'Settings', icon: 'settings', link: '/settings' },
-  ];
+  Appointments: Appointment = {
+    id: 1,
+    title: 'new appointment',
+    date: new Date('23.12.2025'),
+  };
 }
